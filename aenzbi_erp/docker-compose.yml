@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    image: aenzbi-erp
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=
+      - DB_USER=
+      - DB_PASS=
+      - DB_NAME=
+      - EBMS_API_URL=
+      - EBMS_TOKEN=
+      - PAYMENT_GATEWAY_URL=
+      - PAYMENT_GATEWAY_API_KEY=
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
