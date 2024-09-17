@@ -1,5 +1,5 @@
 entrypoint = "index.js"
-modules = ["nodejs-18"]
+modules = ["nodejs-14", "gcloud"]
 hidden = [".config", "package-lock.json"]
 
 [gitHubImport]
@@ -15,6 +15,11 @@ language = "nodejs"
 run = ["node", "index.js"]
 deploymentTarget = "cloudrun"
 ignorePorts = false
+
+[[ports]]
+localPort = 8085
+externalPort = 3000
+exposeLocalhost = true
 
 [[ports]]
 localPort = 9005
