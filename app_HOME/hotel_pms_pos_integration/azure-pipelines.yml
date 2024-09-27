@@ -1,0 +1,66 @@
+# Azure DevOps YAML pipeline for Hotel PMS with POS integration
+
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  DB_NAME: 'hotel_pms_db'
+  DB_USER: 'admin'
+  DB_PASSWORD: 'password'
+  CONTAINER_REGISTRY: 'hotelpmsacr.azurecr.io'
+  IMAGE_NAME: 'hotel_pms_app'
+
+stages:
+  - stage: Build
+    jobs:
+      - job: Build
+        steps:
+          - task: UseNode@2
+            inputs:
+              versionSpec: '16.x'
+              checkLatest: true
+
+          - task: NodeTool@0
+            inputs:
+              versionSpec: '16.x'
+
+          - script: |
+              npm install
+              npm run build
+            displayName: 'Build Project'
+
+          - task: Docker@2
+            inputs:
+              command: build
+              repository: $(CONTAINER_REGISTRY)/$(IMAGE_NAME)
+              Dockerfile: '**/Dockerfile'
+              tags: |
+                $(Build.BuildId)
+
+  - stage: Deploy
+    dependsOn: Build
+    jobs:
+      - deployment: Deploy
+        environment: 'staging'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: Docker@2
+                  inputs:
+                    command: push
+                    repository: $(CONTAINER_REGISTRY)/$(IMAGE_NAME)
+                    tags: |
+                      $(Build.BuildId)
+
+                - task: AzureWebAppContainer@1
+                  inputs:
+                    azureSubscription: 'AzureServiceConnection'
+                    appName: 'hotel-pms-app'
+                    containers: |
+                      $(CONTAINER_REGISTRY)/$(IMAGE_NAME):$(Build.BuildId)
