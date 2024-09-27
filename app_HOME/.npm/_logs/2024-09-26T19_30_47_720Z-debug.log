@@ -1,0 +1,21 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/data/app/io.tempage.dorynode-Q3mWoQEuVEpL2zV2ebp-wA==/lib/arm64/lib_node_v16.so',
+1 verbose cli   '/data/user/0/io.tempage.dorynode/files/bin/npm',
+1 verbose cli   'start'
+1 verbose cli ]
+2 info using npm@6.14.17
+3 info using node@v16.15.1
+4 verbose stack Error: ENOENT: no such file or directory, open '/data/data/io.tempage.dorynode/no_code_app_maker/frontend/package.json'
+5 verbose cwd /data/data/io.tempage.dorynode/no_code_app_maker/frontend
+6 verbose Linux 4.14.141+
+7 verbose argv "/data/app/io.tempage.dorynode-Q3mWoQEuVEpL2zV2ebp-wA==/lib/arm64/lib_node_v16.so" "/data/user/0/io.tempage.dorynode/files/bin/npm" "start"
+8 verbose node v16.15.1
+9 verbose npm  v6.14.17
+10 error code ENOENT
+11 error syscall open
+12 error path /data/data/io.tempage.dorynode/no_code_app_maker/frontend/package.json
+13 error errno -2
+14 error enoent ENOENT: no such file or directory, open '/data/data/io.tempage.dorynode/no_code_app_maker/frontend/package.json'
+15 error enoent This is related to npm not being able to find a file.
+16 verbose exit [ -2, true ]

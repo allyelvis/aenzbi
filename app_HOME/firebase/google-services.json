@@ -1,0 +1,23 @@
+{
+  "project_info": {
+    "project_number": "483264832293",
+    "firebase_url": "https://ecom-421213-default-rtdb.firebaseio.com",
+    "project_id": "ecom-421213",
+    "storage_bucket": "ecom-421213.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483264832293:android:be68e74776380e25bc30cc",
+        "android_client_info": {
+          "package_name": "com.aenzbi.aenzapp"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEHutRo..."
+        }
+      ]
+    }
+  ]
+}

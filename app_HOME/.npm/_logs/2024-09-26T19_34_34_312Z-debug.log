@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/data/app/io.tempage.dorynode-Q3mWoQEuVEpL2zV2ebp-wA==/lib/arm64/lib_node_v16.so',
+1 verbose cli   '/data/user/0/io.tempage.dorynode/files/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'firebase-tools'
+1 verbose cli ]
+2 info using npm@6.14.17
+3 info using node@v16.15.1
+4 verbose npm-session 285b793c66e0a3a8
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData error for firebase-tools@latest request to https://registry.npmjs.org/firebase-tools failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+8 timing stage:rollbackFailedOptional Completed in 2ms
+9 timing stage:runTopLevelLifecycles Completed in 177ms
+10 verbose type system
+11 verbose stack FetchError: request to https://registry.npmjs.org/firebase-tools failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+11 verbose stack     at ClientRequest.<anonymous> (/data/data/io.tempage.dorynode/files/npm/node_modules/node-fetch-npm/src/index.js:68:14)
+11 verbose stack     at ClientRequest.emit (node:events:527:28)
+11 verbose stack     at TLSSocket.socketErrorListener (node:_http_client:454:9)
+11 verbose stack     at TLSSocket.emit (node:events:527:28)
+11 verbose stack     at emitErrorNT (node:internal/streams/destroy:157:8)
+11 verbose stack     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+11 verbose stack     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+12 verbose cwd /data/data/io.tempage.dorynode/no_code_app_maker
+13 verbose Linux 4.14.141+
+14 verbose argv "/data/app/io.tempage.dorynode-Q3mWoQEuVEpL2zV2ebp-wA==/lib/arm64/lib_node_v16.so" "/data/user/0/io.tempage.dorynode/files/bin/npm" "install" "-g" "firebase-tools"
+15 verbose node v16.15.1
+16 verbose npm  v6.14.17
+17 error code ENOTFOUND
+18 error errno ENOTFOUND
+19 error network request to https://registry.npmjs.org/firebase-tools failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+20 error network This is a problem related to network connectivity.
+20 error network In most cases you are behind a proxy or have bad network settings.
+20 error network
+20 error network If you are behind a proxy, please make sure that the
+20 error network 'proxy' config is set properly.  See: 'npm help config'
+21 verbose exit [ 1, true ]
