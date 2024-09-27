@@ -11,6 +11,6 @@
     <string name="previous_os_version">10</string>
     <boolean name="has_been_opened" value="true" />
     <boolean name="allow_remote_dynamite" value="true" />
-    <long name="last_pause_time" value="1727455186640" />
+    <long name="last_pause_time" value="1727455441585" />
     <boolean name="start_new_session" value="false" />
 </map>
