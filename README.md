@@ -1,7 +1,3 @@
-Here's a structured layout for a complete system, documented in Markdown. This structure covers the essential components, functionality, and setup for a system like a CRM, POS, or ERP application integrated with external services.
-
----
-
 # Aenzbi System Documentation
 
 ## Table of Contents
