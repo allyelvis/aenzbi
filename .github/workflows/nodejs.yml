@@ -29,7 +29,3 @@ jobs:
 
     - name: Run tests
       run: npm test || echo "No tests found"
-
-    - name: Deploy (Optional)
-      if: github.ref == 'refs/heads/main'
-      run: echo "Add deployment script here"
