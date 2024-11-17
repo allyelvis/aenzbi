@@ -1,0 +1,13 @@
+steps:
+  - name: 'gcr.io/cloud-builders/git'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        git clone https://github.com/AllyElvis/aenzbi.git /workspace/aenzbi
+        cd /workspace/aenzbi
+        npm install
+        npm run build
+
+images:
+  - gcr.io/$PROJECT_ID/aenzbi-app:latest
