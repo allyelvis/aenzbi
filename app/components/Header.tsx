@@ -6,7 +6,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold text-center mb-4">Aenzbi Software and Internet Company</h1>
         <nav>
-          <ul className="flex justify-center space-x-6">
+          <ul className="flex flex-wrap justify-center space-x-4 md:space-x-6">
             <li>
               <Link href="#about" className="hover:text-gray-300">
                 About Us
@@ -20,6 +20,21 @@ export default function Header() {
             <li>
               <Link href="#dev-environment" className="hover:text-gray-300">
                 Development Environment
+              </Link>
+            </li>
+            <li>
+              <Link href="#projects" className="hover:text-gray-300">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="#blog" className="hover:text-gray-300">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link href="#team" className="hover:text-gray-300">
+                Our Team
               </Link>
             </li>
             <li>
