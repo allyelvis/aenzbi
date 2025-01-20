@@ -5,6 +5,9 @@ import Services from "./components/Services"
 import Repository from "./components/Repository"
 import Contact from "./components/Contact"
 import DevEnvironment from "./components/DevEnvironment"
+import ProjectsShowcase from "./components/ProjectsShowcase"
+import BlogPreview from "./components/BlogPreview"
+import Team from "./components/Team"
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
         <About />
         <Services />
         <DevEnvironment />
+        <ProjectsShowcase />
+        <BlogPreview />
+        <Team />
         <Repository />
         <Contact />
       </main>
