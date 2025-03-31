@@ -1,21 +1,24 @@
 {
-  "name": "nodejs",
+  "name": "firebase-app-hosting-nextjs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "export": "next export",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "Ally Elvis Nzeyimana",
-  "license": "MIT",
   "dependencies": {
-    "@types/node": "^18.0.6"
+    "next": "15.0.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9",
+    "eslint-config-next": "15.0.0",
+    "typescript": "^5"
   }
 }
-"scripts": {
-  "lint": "eslint .",
-  "format": "prettier --write ."
-}
-

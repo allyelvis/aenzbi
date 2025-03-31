@@ -1,119 +1,30 @@
-# Aenzbi - Advanced Retail and Business Management System
+# Next.js on Firebase App Hosting
 
-Aenzbi is a comprehensive platform designed to streamline retail and business operations. From point-of-sale systems to inventory and invoice management, Aenzbi integrates seamlessly with EBMS Burundi to enable real-time invoicing and stock updates.
+This is an example [Next.js](https://nextjs.org/) project to demonstrate SSG,
+SSR, and ISR on [Firebase App Hosting](https://firebase.google.com/docs/app-hosting).
 
----
+## Getting Started
 
-## 🛠 Features
-- **POS Module**: Manage sales and receipts efficiently.
-- **Inventory Management**: Track and update stock in real-time.
-- **Invoicing System**: Generate and post invoices to EBMS Burundi.
-- **Accounting Integration**: Simplify financial tracking.
-- **Cloud Integration**: Google Cloud and Firebase for data storage and synchronization.
+Run the development server:
 
----
-
-## 🚀 Technologies Used
-- **Frontend**: React.js, TailwindCSS
-- **Backend**: Node.js, Express.js, Firebase Functions
-- **Database**: MongoDB, Firebase Realtime Database
-- **Integrations**: EBMS Burundi API
-- **DevOps**: GitHub Actions, Docker, Firebase Hosting
-
----
-
-## 🔧 Setup Instructions
-### Prerequisites
-1. Install [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/).
-2. Set up a MongoDB database or Firebase project.
-
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AllyElvis/aenzbi.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd aenzbi
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Create a `.env` file with the following variables:
-   ```plaintext
-   PORT=3000
-   MONGO_URI=your-mongo-db-uri
-   EBMS_API_URL=https://ebms.obr.gov.bi:9443/ebms_api
-   EBMS_BEARER_TOKEN=your-ebms-bearer-token
-   ```
-5. Start the server:
-   ```bash
-   npm start
-   ```
-
----
-
-## 💡 Usage
-1. Access the app in your browser at `http://localhost:3000`.
-2. Use the intuitive dashboard to manage:
-   - Products
-   - Sales and invoices
-   - Stock movements
-3. Sync with EBMS Burundi for real-time updates.
-
----
-
-## 📖 API Documentation
-### Authentication
-- **Endpoint**: `/login`
-- **Method**: POST
-- **Description**: Authenticate and retrieve a token.
-
-### Invoices
-- **Endpoint**: `/addInvoice`
-- **Method**: POST
-- **Description**: Submit invoices to EBMS Burundi.
-
-### Stock Movements
-- **Endpoint**: `/addStockmovement`
-- **Method**: POST
-- **Description**: Update stock based on sales or purchases.
-
----
-
-## 🔐 Security
-- Use `.env` files to store sensitive configurations.
-- Regularly update dependencies to avoid vulnerabilities.
-
----
-
-## 🛠 Roadmap
-- Implement analytics for sales and stock performance.
-- Add multi-language support.
-- Role-based access control for admin and staff users.
-
----
-
-## 📫 Contact
-For support or inquiries:
-- **Email**: naelvis6569@gmail.com
-- **GitHub**: [AllyElvis](https://github.com/AllyElvis)
-
----
-
-## 📜 License
-This project is licensed under the MIT License.
+```bash
+npm run dev
 ```
 
----
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Next Steps
-1. Copy this `README.md` to the `aenzbi` repository.
-2. Let me know when it’s added so I can proceed with:
-   - Setting up GitHub Actions for CI/CD.
-   - Enhancing code quality with ESLint and Prettier.
-   - Adding API documentation using Swagger or Postman.
+## Deploy to Firebase App Hosting
 
-Let me know when you're ready!
-# Enhancement log for aenzbi on Tue Dec  3 09:08:14 PM UTC 2024
+### 1. Get your project set up on GitHub
+
+[Create a new GitHub repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) and push the newly-initialized sample code to it:
+
+<pre>
+git remote add origin https://github.com/<b>$YOUR_NEW_REPOSITORY</b>.git
+git branch -M main
+git push -u origin main
+</pre>
+
+### 2. Set up Firebase App Hosting
+
+Continue to [Get started with Firebase App Hosting](https://firebase.google.com/docs/app-hosting/get-started#step-1:).
